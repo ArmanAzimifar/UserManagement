@@ -1,0 +1,16 @@
+<div class="back">
+  <button nz-button nzType="primary" [routerLink]="['/users']">بازگشت<i nz-icon nzType="left"></i></button>
+</div>
+<div class="wrapper" *ngIf="(user$ | async) as user">
+  <nz-carousel nzDotPosition="top" nzEnableSwipe="false">
+    <div nz-carousel-content *ngFor="let image of user.images;">
+      <img [src]="image" [alt]="user.title" class="img-responsive">
+    </div>
+  </nz-carousel>
+  <div>
+    <h2>{{user.title}}</h2>
+    <p>
+      {{user.description}}
+    </p>
+  </div>
+</div>

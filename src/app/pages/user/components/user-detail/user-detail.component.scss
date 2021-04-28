@@ -1,0 +1,27 @@
+[nz-carousel-content] {
+  width: 200px;
+  height: 200px;
+  overflow: hidden;
+  text-align: center;
+  line-height: 200px;
+}
+
+.wrapper {
+  display: flex;
+  column-gap: 15px;
+}
+
+.img-responsive {
+  max-width: 100%;
+  height: auto;
+}
+
+.ant-carousel {
+  width: 36%;
+}
+
+.back {
+  display: flex;
+  margin-bottom: 16px;
+  justify-content: flex-end;
+}
